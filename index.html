@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Registrasi Seminar</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <h1>Sistem Registrasi Seminar Sistem Informasi</h1>
+    <p>Program Studi Sistem Informasi</p>
+    <p>Selamat datang di halaman pendaftaran Seminar Teknologi Informasi.</p>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="#informasi">Informasi Seminar</a> |
+        <a href="#formulir">Formulir Pendaftaran</a> |
+        <a href="#peserta">Daftar Peserta</a>
+    </nav>
+
+    <hr>
+
+    <!-- INFORMASI SEMINAR -->
+    <h2 id="informasi">Informasi Seminar</h2>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Informasi Kegiatan Seminar</th>
+        </tr>
+        <tr>
+            <td>Nama Seminar</td>
+            <td>Seminar Teknologi Informasi</td>
+        </tr>
+        <tr>
+            <td>Tanggal</td>
+            <td>20 Desember 2026</td>
+        </tr>
+        <tr>
+            <td>Waktu</td>
+            <td>09.00 - 12.00 WIB</td>
+        </tr>
+        <tr>
+            <td>Tempat</td>
+            <td>Aula Kampus</td>
+        </tr>
+        <tr>
+            <td>Narasumber</td>
+            <td>Ahli Teknologi Informasi</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- FORMULIR PENDAFTARAN -->
+    <h2 id="formulir">Formulir Pendaftaran</h2>
+
+    <form action="" method="get">
+
+        <fieldset>
+            <legend>Data Pribadi</legend>
+
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama"
+            placeholder="Masukkan nama lengkap" required>
+            <br><br>
+
+            <label for="npm">NPM:</label><br>
+            <input type="text" id="npm" name="npm"
+            placeholder="Masukkan NPM" required>
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"
+            placeholder="Masukkan email" required>
+            <br><br>
+
+            <label for="wa">Nomor WhatsApp:</label><br>
+            <input type="tel" id="wa" name="wa"
+            placeholder="Masukkan nomor WhatsApp" required>
+            <br><br>
+
+            <label for="lahir">Tanggal Lahir:</label><br>
+            <input type="date" id="lahir" name="lahir" required>
+            <br><br>
+
+            Jenis Kelamin:<br>
+            <input type="radio" id="laki" name="jk"
+            value="Laki-laki" required>
+            <label for="laki">Laki-laki</label>
+
+            <input type="radio" id="perempuan" name="jk"
+            value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+            <br><br>
+
+            <label for="prodi">Program Studi:</label><br>
+            <select id="prodi" name="prodi" required>
+                <option value="">-- Pilih Program Studi --</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Manajemen">Manajemen</option>
+            </select>
+            <br><br>
+
+            <label for="semester">Semester:</label><br>
+            <input type="number" id="semester" name="semester"
+            min="1" max="14" placeholder="Masukkan semester" required>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Data Kegiatan</legend>
+
+            Topik Seminar:<br>
+            <input type="checkbox" id="ai" name="topik"
+            value="Artificial Intelligence">
+            <label for="ai">Artificial Intelligence</label><br>
+
+            <input type="checkbox" id="web" name="topik"
+            value="Pemrograman Web">
+            <label for="web">Pemrograman Web</label><br>
+
+            <input type="checkbox" id="cyber" name="topik"
+            value="Cyber Security">
+            <label for="cyber">Cyber Security</label>
+            <br><br>
+
+            <label for="alasan">Alasan Mengikuti Seminar:</label><br>
+            <textarea id="alasan" name="alasan"
+            rows="4" cols="40"
+            placeholder="Tuliskan alasan Anda"></textarea>
+            <br><br>
+
+            <input type="checkbox" id="setuju"
+            name="persetujuan" value="Setuju" required>
+            <label for="setuju">
+                Saya menyetujui ketentuan pendaftaran.
+            </label>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Daftar</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <hr>
+
+    <!-- DAFTAR PESERTA -->
+    <h2 id="peserta">Daftar Peserta Seminar</h2>
+
+    <table border="1">
+        <caption>Data Simulasi Peserta Seminar</caption>
+
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama Peserta</th>
+                <th>NPM</th>
+                <th>Program Studi</th>
+                <th>Semester</th>
+                <th>Jenis Kelamin</th>
+                <th>Status Pendaftaran</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Reni Julia Nisa Nasution</td>
+                <td>123456</td>
+                <td rowspan="2">Sistem Informasi</td>
+                <td>3</td>
+                <td>Perempuan</td>
+                <td>Terdaftar</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Peserta Kedua</td>
+                <td>123457</td>
+                <td>3</td>
+                <td>Laki-laki</td>
+                <td>Terdaftar</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Peserta Ketiga</td>
+                <td>123458</td>
+                <td>Teknik Informatika</td>
+                <td>3</td>
+                <td>Perempuan</td>
+                <td>Terdaftar</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Peserta Keempat</td>
+                <td>123459</td>
+                <td>Manajemen</td>
+                <td>3</td>
+                <td>Laki-laki</td>
+                <td>Terdaftar</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Peserta Kelima</td>
+                <td>123460</td>
+                <td>Manajemen</td>
+                <td>3</td>
+                <td>Perempuan</td>
+                <td>Terdaftar</td>
+            </tr>
+
+            <tr>
+                <td colspan="7">
+                    Jumlah seluruh peserta: 5 orang
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- IDENTITAS PEMBUAT -->
+    <h2>Identitas Pembuat</h2>
+
+    <p>Nama: Reni Julia Nisa Nasution</p>
+    <p>NPM: 2503100245</p>
+    <p>Mata Kuliah: Pemrograman Web 1</p>
+    <p>Institusi: ITS PALUTA</p>
+
+</body>
+</html>
